@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arian Amirian — Portfolio</title>
+<meta name="description" content="Portfolio för Arian Amirian — Frontend-utvecklare och musikproducent.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo">AA</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Öppna meny" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__menu" id="navMenu">
+      <a href="#om-mig">Om mig</a>
+      <a href="#erfarenhet">Erfarenhet</a>
+      <a href="#projekt">Projekt</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <img src="images/hero.jpg" alt="Porträttbild av Arian Amirian" class="hero__img">
+    <div class="hero__overlay">
+      <p class="eyebrow">Frontend-utvecklare &amp; Musikproducent</p>
+      <h1 class="hero__title">Arian<br>Amirian</h1>
+      <p class="hero__subtitle">Portfolio</p>
+    </div>
+    <a href="#om-mig" class="scroll-cue" aria-label="Scrolla ner">↓</a>
+  </section>
+
+  <!-- ===== OM MIG ===== -->
+  <section class="about" id="om-mig">
+    <div class="about__bg">
+      <img src="images/about.jpg" alt="" class="about__img">
+    </div>
+
+    <div class="about__content reveal">
+      <h2 class="section-title">Kort om mig</h2>
+      <p class="about__text">
+        Jag är IT-student vid IT-Högskolan med fokus på frontend-utveckling.
+        Jag har erfarenhet av HTML, CSS, JavaScript, Figma och UX-design och
+        brinner för att skapa användarvänliga webbapplikationer med kreativitet.
+      </p>
+      <ul class="skill-badges">
+        <li class="skill-badge skill-badge--html">HTML5</li>
+        <li class="skill-badge skill-badge--js">JS</li>
+        <li class="skill-badge skill-badge--css">CSS3</li>
+      </ul>
+    </div>
+
+    <div class="about__content about__content--music reveal">
+      <h2 class="section-title">Musikproduktion</h2>
+      <p class="about__text">
+        Jag är musikproducent och låtskrivare med erfarenhet av att skapa,
+        arrangera och producera musik inom olika genrer. Jag arbetar med
+        mixning, mastering och ljudteknik (engineering), vilket gör att jag
+        kan ta en låt från idé till färdig produktion med hög kvalitet.
+      </p>
+    </div>
+
+    <blockquote class="pull-quote reveal">
+      Min styrka ligger i att kombinera teknisk kompetens med kreativitet,
+      vilket gör att jag kan bidra både i digitala projekt och i musikaliska produktioner.
+    </blockquote>
+  </section>
+
+  <!-- ===== ARBETSERFARENHET ===== -->
+  <section class="experience" id="erfarenhet">
+    <h2 class="section-title section-title--light reveal">Arbetserfarenhet</h2>
+
+    <div class="exp-card reveal">
+      <span class="exp-card__tag exp-card__tag--blue">Göteborgs Stad</span>
+      <h3 class="exp-card__role">Studiokoordinator</h3>
+      <p>
+        Jag har arbetat som studiokoordinator i studion, där jag ansvarade
+        för schemaläggning, teknik och koordinering av inspelningar. Jag
+        stödde artister och producenter i deras kreativa processer och
+        säkerställde att studion fungerade smidigt, vilket gav mig erfarenhet
+        av projektledning, samarbete och praktisk problemlösning i kreativa miljöer.
+      </p>
+    </div>
+
+    <div class="exp-card reveal">
+      <span class="exp-card__tag exp-card__tag--pink">Klarna</span>
+      <h3 class="exp-card__role">Kundtjänst</h3>
+      <p>
+        Jag har arbetat hos Klarna Bank där jag bemötte kunder och gav
+        support i allt från fakturafrågor till tekniska problem i appen och
+        på hemsidan. Rollen gav mig erfarenhet av kundservice, problemlösning
+        och att snabbt anpassa lösningar efter olika behov.
+      </p>
+    </div>
+
+    <div class="exp-card reveal">
+      <span class="exp-card__tag exp-card__tag--orange">Storesupport</span>
+      <h3 class="exp-card__role">Butiksmedarbetare — ICA, Coop, Willys</h3>
+      <p>
+        Jag har arbetat extra inom butiker som ICA, Coop och Willys, där jag
+        hanterade kassasystem, assisterade kunder och stödde den dagliga
+        driften av butiken.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== PROJEKT ===== -->
+  <section class="project" id="projekt">
+    <h2 class="project__heading reveal">Projekt</h2>
+    <p class="project__kicker reveal">Hemsida</p>
+
+    <div class="mockup mockup--site reveal">
+      <div class="mockup__browserbar">
+        <span></span><span></span><span></span>
+      </div>
+      <img src="images/matkoll-site.jpg" alt="Skärmdump av Matkoll-hemsidan" class="mockup__screenshot">
+    </div>
+
+    <p class="project__kicker reveal">App</p>
+
+    <div class="phone-carousel reveal">
+      <button class="phone-carousel__btn phone-carousel__btn--prev" id="phonePrev" aria-label="Föregående skärm">‹</button>
+      <div class="phone-carousel__track" id="phoneTrack">
+
+        <div class="phone">
+          <div class="phone__screen phone__screen--scan">
+            <span class="phone__logo">MAT<br>KÖLL</span>
+            <div class="phone__scanbox"></div>
+            <span class="phone__btn">Skanna</span>
+          </div>
+        </div>
+
+        <div class="phone">
+          <div class="phone__screen phone__screen--menu">
+            <ul>
+              <li>Lista</li><li>Historik</li><li>Ny lista</li>
+              <li>Recept</li><li>Hjälp</li><li>Inställningar</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="phone">
+          <div class="phone__screen phone__screen--profile">
+            <div class="phone__avatar"></div>
+            <strong>Milhouse Van-Houten</strong>
+            <span class="phone__label">Vänner/Familj</span>
+            <ul>
+              <li>Peter Larsson</li><li>Moe Szyslak</li>
+              <li>Kearney Zzyzwicz</li><li>Ingrid Ekström</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="phone">
+          <div class="phone__screen phone__screen--list">
+            <strong>Mina varor</strong>
+            <ul>
+              <li>Pågen Hamburgerbröd <em>✓</em></li>
+              <li>Arla Mild-kvarg (Vanilj) <em>✓</em></li>
+              <li>Wernerssons ost Rocky <em>✕</em></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="phone">
+          <div class="phone__screen phone__screen--error">
+            <strong>Oj!</strong>
+            <p>Det verkar som att något gick fel. Prova igen eller starta om appen.</p>
+            <span class="phone__btn">Försök igen</span>
+          </div>
+        </div>
+
+      </div>
+      <button class="phone-carousel__btn phone-carousel__btn--next" id="phoneNext" aria-label="Nästa skärm">›</button>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section class="contact" id="kontakt">
+    <img src="images/contact.jpg" alt="" class="contact__img">
+    <div class="contact__overlay">
+      <h2 class="section-title section-title--light reveal">Kontakt</h2>
+
+      <a href="mailto:Arianamirian825@gmail.com" class="contact__row reveal">
+        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7 10-7"/></svg>
+        <span>Arianamirian825@gmail.com</span>
+      </a>
+
+      <a href="tel:0707620844" class="contact__row reveal">
+        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
+        <span>070-762 08 44</span>
+      </a>
+
+      <a href="https://instagram.com/motto.beats" target="_blank" rel="noopener" class="contact__row reveal">
+        <svg class="contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        <span>motto.beats</span>
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Arian Amirian</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
